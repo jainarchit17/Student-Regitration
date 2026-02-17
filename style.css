@@ -1,0 +1,136 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d4e5f6;
+    font-family: 'Ubuntu';
+    min-height: 100vh;
+    padding: 20px;
+}
+header{
+    margin-top: 1rem;
+    text-align: center;
+}
+header h1{
+    margin: 1rem;
+    color: #2c3e50;
+}
+.container{
+    /* background-color: #fff; */
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+.container-heading{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3vh;
+    text-decoration:  underline dotted;
+    color: #336696;
+}
+#regForm {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.inputs{
+    margin-bottom: 1rem;
+}
+.inputs label{
+    display: block;
+    margin-bottom:0.25rem ;
+    font-weight: 500;
+}
+.inputs input{
+    width: 100%;
+    padding: 0.5rem;
+    border: .9px solid #ddd;
+    border-radius: 0.3rem;
+}
+.inputs input:focus{
+    border-color: aqua;
+    outline: none;
+}
+#regButton{
+       width: 100%;
+       padding: 0.8rem;
+       border: none;
+       color: #fff;
+       font-family: "Ubuntu";
+       font-weight: 700;
+       background-color: #4d9ce5;
+       border-radius: 0.5rem;
+}
+#regButton:hover{
+    background-color: #336696;
+}
+.display-details{
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.student-records{
+    width: 100%;
+    margin-top: 2rem;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+.editbtn{
+       width: 100%;
+       padding: 0.8rem;
+       border: none;
+       color: #fff;
+       font-family: "Ubuntu";
+       font-weight: 700;
+       background-color: #5e8ebb;
+       border-radius: 0.5rem;
+}
+.editbtn:hover{
+    background-color: #336696;
+}
+
+.delbtn{
+       width: 100%;
+       padding: 0.8rem;
+       border: none;
+       color: #fff;
+       font-family: "Ubuntu";
+       font-weight: 700;
+       background-color: #bb6f5e;
+       border-radius: 0.5rem;
+}
+.delbtn:hover{
+    background-color: #963333;
+}
+
+/* Responsive to various screen sizes */
+
+@media (max-width:1024px) {
+    .container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 640px) {
+    .student-records{
+        overflow-x: auto;/*For Scrollbar */
+    }
+}
